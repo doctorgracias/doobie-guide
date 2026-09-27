@@ -23,6 +23,9 @@ object MyEffects extends App{
     _ <- printInfo(s"Hello amerima I am a $num!")
   } yield ()
 
+  val chainedEffects =
+    printInfo("hola") *> printInfo(" sup!")
+
   composableEffects
     .unsafeRunSync()
 }
