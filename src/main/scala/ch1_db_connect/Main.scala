@@ -11,7 +11,7 @@ import org.typelevel.doobie.implicits._
 
 object Main extends App
 {
-  val xa = Transactor.fromDriverManager[IO](
+  val xa = Transactor.fromDriverManager[IO]( // подключение к БД + пулы соединения
     driver = "org.postgresql.Driver",  // имя JDBC драйверва - в нашем случае у нас postgresql
     url = "jdbc:postgresql:world",     // хост нашей бдешки - локальной
     user = "postgres",                 // имя

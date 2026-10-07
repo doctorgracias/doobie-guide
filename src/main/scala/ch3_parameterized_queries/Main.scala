@@ -3,7 +3,7 @@ package ch3_parameterized_queries
 import cats.effect._
 import ch2_query_select.Main.xa
 import org.typelevel.doobie._
-import org.typelevel.doobie.implicits.toSqlInterpolator
+import org.typelevel.doobie.implicits._
 
 object Main extends App{
   val xa = Transactor.fromDriverManager[IO](

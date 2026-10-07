@@ -37,6 +37,6 @@ testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
 
 lazy val root = (project in file("."))
   .settings(
-    name := "marketplace"
+    name := "doobie-guide"
   )
 
